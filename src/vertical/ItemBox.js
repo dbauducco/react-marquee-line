@@ -34,7 +34,7 @@ const ItemBox = props => {
   useEffect(() => {
     let token = setTimeout(() => {
       fadeUp();
-    }, 2000);
+    }, 10000);
 
     return () => {
       token && clearTimeout(token);
