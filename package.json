@@ -26,7 +26,8 @@
     "clean": "rimraf dist",
     "babel": "npx babel src --out-dir dist",
     "autofix-css": "npx postcss src/horizontal/index.css --use autoprefixer --no-map -o dist/horizontal/index.css && postcss src/vertical/index.css --use autoprefixer --no-map -o dist/vertical/index.css",
-    "prepublish": "npm run clean && npm run babel && npm run autofix-css"
+    "prepublish": "npm run clean && npm run babel && npm run autofix-css",
+    "prepare": "npm run prepublish"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,7 +45,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-scripts": "^3.2.0",
+    "react-scripts": "^3.4.4",
     "rimraf": "^2.7.1"
   },
   "peerDependencies": {
